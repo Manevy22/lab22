@@ -1,10 +1,11 @@
 package SistemaGestionEmpleados;
 
 public abstract class Empleado{
+    //Atributos
     protected String nombre;
     protected int id;
     protected double sueldoBase;
-
+//Constructor de Empleado
     public Empleado(double sueldoBase, String nombre) {
         this.sueldoBase=sueldoBase;
         this.nombre=nombre;
@@ -13,7 +14,7 @@ public abstract class Empleado{
 
     public abstract double calcularSueldo();
 
-    public int getId() {
+    public int getId() {//Método que define la ID de cada empleado.
         return id;
     }
 
