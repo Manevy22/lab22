@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0e15a35c-1eeb-4234-a683-82b1dcaad910" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/libraries/mariadb_java_client_3_2_0_sources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mysql-connector-j-8.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BaseDeDatos/Estudiantes2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BaseDeDatos/estudiantes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArrayListt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab22.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab22.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/lab22/SistemaGestionEmpleados/Empleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/lab22/SistemaGestionEmpleados/Empleado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/lab22/SistemaGestionEmpleados/EmpleadoAsalariado.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/lab22/SistemaGestionEmpleados/EmpleadoAsalariado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/lab22/SistemaGestionEmpleados/Empleadocomision.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/lab22/SistemaGestionEmpleados/Empleadocomision.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/lab22/SistemaGestionEmpleados/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/lab22/SistemaGestionEmpleados/Main.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2Vll47dmG2m3GbOX2edjNdVw3sM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Usuario/IdeaProjects/lab22"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e15a35c-1eeb-4234-a683-82b1dcaad910" name="Changes" comment="" />
+      <created>1695418358920</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695418358920</updated>
+    </task>
+    <servers />
+  </component>
+</project>

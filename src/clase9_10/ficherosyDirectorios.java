@@ -17,6 +17,7 @@ public class ficherosyDirectorios {
             crearDirectorio direct1 = new crearDirectorio(direc);
             direct1.crear();
         }
+
         System.out.println("Desea crear un archivo y agregarle contenido?1: Si");
         op= scanner.nextInt();
         scanner.nextLine();
