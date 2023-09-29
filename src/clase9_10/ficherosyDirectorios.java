@@ -66,7 +66,6 @@ class crearArchivoConContenido{
     String nombreArchivo;
     public crearArchivoConContenido(String nombreArchivo){
         this.nombreArchivo=nombreArchivo;
-
     }
     public void anadirTexto(String texto){
         try {
