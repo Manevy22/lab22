@@ -24,7 +24,8 @@ import java.util.Scanner;
                     System.out.println("2. Agregar estudiante");
                     System.out.println("3. Editar estudiante");
                     System.out.println("4. Eliminar estudiante");
-                    System.out.println("5. Salir");
+                    System.out.println("5. Mostrar estudiantes mayores de 28");
+                    System.out.println("6. Salir");
                     System.out.print("Selecciona una opci�n: ");
 
                     int opcion = scanner.nextInt();
@@ -44,6 +45,9 @@ import java.util.Scanner;
                             eliminarEstudiante(conexion, scanner);
                             break;
                         case 5:
+                            mostrarEstudiantesmas28(conexion);
+                            break;
+                        case 6:
                             // Cerrar la conexi�n y salir del programa
                             conexion.close();
                             scanner.close();
@@ -94,7 +98,7 @@ import java.util.Scanner;
             resultado.close();
             statement.close();
         }
-        private static void mostrarEstudiantesmas18(Connection conexion) throws SQLException {
+        private static void mostrarEstudiantesmas28(Connection conexion) throws SQLException {
             // Crea una declaraci�n SQL para ejecutar una consulta de selecci�n.
             Statement statement = conexion.createStatement();
 
@@ -121,7 +125,7 @@ import java.util.Scanner;
                 // Calcula la diferencia en años entre la fecha actual y la fecha de nacimiento
                 Period periodo = Period.between(fechaNacimiento, fechaActual);
                 // Verifica si la edad es mayor o igual a 18
-                if (periodo.getYears() >=18){
+                if (periodo.getYears() >=28){
                     int id = resultado.getInt("id");
                     String nombre = resultado.getString("nombre");
                     String apellido = resultado.getString("apellido");
@@ -202,20 +206,17 @@ import java.util.Scanner;
             System.out.print("ID del estudiante a editar: ");
             int id = scanner.nextInt();
             scanner.nextLine(); // Consumir la nueva l�nea despu�s de leer un entero.
-
             // Verificar si el estudiante con el ID especificado existe en la base de datos.
             String consultaExistencia = "SELECT * FROM estudiantes WHERE id = ?";
-            PreparedStatement preparedStatementExistencia = conexion.prepareStatement(consultaExistencia);
+            PreparedStatement preparedStatementExistencia =conexion.prepareStatement(consultaExistencia);
             preparedStatementExistencia.setInt(1, id); // Establece el valor del marcador de posici�n.
             ResultSet resultadoExistencia = preparedStatementExistencia.executeQuery();
-
             // Si no se encuentra ning�n estudiante con el ID proporcionado, muestra un mensaje y sale de la funci�n.
             if (!resultadoExistencia.next()) {
                 System.out.println("El estudiante no existe.");
                 preparedStatementExistencia.close();
                 return;
             }
-
             // Solicita al usuario ingresar los nuevos detalles del estudiante.
             System.out.print("Nuevo nombre: ");
             String nuevoNombre = scanner.nextLine();
